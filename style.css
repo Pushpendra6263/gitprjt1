@@ -1,0 +1,783 @@
+@font-face {
+    font-family:gilroy;
+    src: url(./fonts/Gilroy-Light.otf);
+    font-weight: 100
+}
+@font-face {
+    font-family: gilroy;
+    src: url(./fonts/Gilroy-Bold.ttf);
+    font-weight: 500
+}
+@font-face {
+    font-family: druk;
+    src: url(./fonts/Druk-Medium.ttf);
+}
+@font-face {
+    font-family: Druk Heavy;
+    src: url(./fonts/Druk-Heavy\ \(1\).ttf);
+}
+@font-face {
+    font-family: Yank Regular;
+    src: url(./fonts/yank-webfont.ttf);
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: rgb(244,242,232);
+}
+#main #main-bottle{
+    position: absolute;
+    top: 40%;
+    left:  49%;
+    transform: translate(-50%,-50%);
+    height: 480px;
+    z-index: 9999999;
+    object-position: center;
+    background-size: cover;
+}
+
+
+#nav{
+    position: relative;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+#nav img{
+    height: 40px;
+}
+#nav button{
+    position: relative;
+    color: white;
+    font-size: 15px;
+    padding: 12px 20px;
+    background-color: rgb(41, 157, 43);
+    font-family: gilroy;
+    border: 1px solid black;
+    z-index: 99;
+    font-weight: 500;
+    transition: all ease .7s;
+}
+#nav-left{
+    width: 6%;
+}
+#nav-img{
+    position: fixed;
+    left: 6%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 25px 0px 10px;
+    
+}
+#left{
+    position: fixed;
+    top: 2%;
+    left: 0.9%;
+    padding: 20px 10px;
+    height: 100%;
+    width: 50px;
+}
+#left i:nth-child(1){
+    font-size: 25px;
+    font-weight: 900;
+}
+#left i:nth-child(2){
+    top: 3%;
+    font-size: 25px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.571);
+}
+#nav-left #mid{
+    position: fixed;
+    left: 5%;
+    top: 2%;
+    margin-top: 18px;
+    height: 90%;
+    width:2px;
+    background-color: rgba(0, 0, 0, 0.586);
+    border-radius: 50px;
+}
+
+
+#page1{
+    height: 72vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page1 h1{
+    text-align: center;
+    font-size: 24vh;
+    width: 40%;
+    color: rgb(41, 157, 43);
+    font-family: Druk Heavy;
+    line-height: 20vh;
+    margin-top: -30px;
+}
+
+
+#page2{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 10px 0px 100px;
+}
+#p2-left{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+#p2-left h2{
+    font-family: Yank Regular;
+    font-size: 23px;
+    font-weight: 100;
+    width: fit-content;
+}
+#p2-left h1{
+    font-family: Druk Heavy;
+    width: 25%;
+    font-size: 7.5vh;
+    line-height: 7.4vh;
+    margin-top: 5px;
+}
+#p2-left h4{
+    font-family: Druk Heavy;
+    margin-top: 10px;
+    font-size: 4vh;
+    width: fit-content;
+}
+#p2-left p{
+    width: 65%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.2vh;
+}
+#p2-left button{
+   width: fit-content;
+    padding: 8px 16px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    font-size: 2.7vh;
+    margin-top: 50px;
+    transition: all ease .7s;
+    font-family: gilroy;
+}
+
+#p2-right{
+    margin-right: 50px;
+    height: 90%;
+    width: 44%;
+    padding: 10px 10px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    position: relative;
+    z-index: 9;
+}
+#p2-right h4{
+    font-family: Druk Heavy;
+    font-weight: 900;
+    width: fit-content;
+}
+#p2-right h3{
+    font-family: druk;
+    font-weight: 100;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    width: fit-content;
+}
+#p2-right .line{
+    margin-top: 5px;
+    width: 80%;
+    height: 3px;
+    background-color: black;
+    border-radius: 100px;
+}
+#p2-right .para{
+    width: 90%;
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+}
+#p2-right .para h1{
+    font-family: gilroy;
+}
+#p2-right .para p{
+    font-family: gilroy;
+    width: 90%;
+    font-weight: 100;
+    font-size: 1.7vh;
+}
+
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    padding: 0px 10px 0px 100px;
+    overflow: hidden;
+}
+#page3 h1{
+    height: 45vh;
+    font-size: 330px;
+    font-family: druk ;
+    letter-spacing: 12px;
+    font-weight: 500;
+    color: rgb(33, 133, 35);
+}
+#p3-bottom{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#p3-bleft img{
+    height: 230px;
+    margin-top: 60px;
+}
+#p3-bleft h3{
+    font-family: Yank Regular;
+    font-weight: 100;
+    font-size: 20px;
+    width: 70%;
+    line-height: 25px;
+}
+
+#p3-bright{
+    height: 45vh;
+    margin-top: 40px;
+    margin-right: 50px;
+    width: 35%;
+}
+#p3-bright p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 92%;
+}
+#p3-bright p:nth-child(1){
+    margin-bottom: 40px;
+}
+#p3-bright h2{
+    font-family: gilroy;
+    margin-bottom: 20px;
+}
+
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#page4 #p4-img1{
+    height: 470px;
+    width: 470px;
+    background-image: url(https://lagunitas.com/wp-content/themes/lagunitas/assets/images/splat-black.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 65%;
+    right: 0%;
+    transform: translate(0%,-50%);
+}
+#page4 #p4-img2{
+    width: 280px;
+    height: 300px;
+    left: 6%;
+    top: 28%;
+    background-image: url(https://lagunitas.com/wp-content/uploads/2022/08/Hoppy-Refresher.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(0%,-50%);
+}
+#page4 #p4-img3{
+    width: 310px;
+    height: 330px;
+    background-image: url(https://lagunitas.com/wp-content/uploads/2022/08/Hoppy-Refresher.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 61%;
+    left: 26%;
+    transform: translate(0%,-50%);
+}
+#page4 #p4-img4{
+    height: 320px;
+    position: absolute;
+    top: 50%;
+    left: 14%;
+    transform: rotate(-15deg);
+    filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.646));
+}
+#p4-img1 #p4-text1{
+    position: absolute;
+    top: 8%;
+    left: 22%;
+    height: 50%;
+    width: 70%;
+    color: white;
+    font-family: gilroy;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#line1{
+    height: 2px;
+    width: 60%;
+    background-color: white;
+    margin: 2px 0 20px 0;
+}
+#p4-img1 #p4-text1 h1{
+    font-size: 2.9vw;
+    font-family: druk;
+    font-weight: 100;
+}
+#p4-img1 #p4-text1 p{
+    width: 80%;
+    font-size: .9vw;
+}
+
+#p4-img2 #p4-text2{
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    height: 50%;
+    width: 70%;
+    font-family: gilroy;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#line2{
+    height: 3px;
+    width: 80%;
+    background-color: black;
+    margin: 0px 0 15px 0;
+}
+#p4-img2 #p4-text2 h1{
+    font-size: 2.8vw;
+    font-weight: 100;
+    font-family: druk;
+}
+#p4-img2 #p4-text2 p{
+    width: 90%;
+    font-size: 1vw;
+    font-weight: 900;
+}
+
+#p4-img3 #p4-text3{
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    height: 50%;
+    width: 70%;
+    font-family: gilroy;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#line3{
+    height: 3px;
+    width: 80%;
+    background-color: black;
+    margin: 0px 0 15px 0;
+}
+#p4-img3 #p4-text3 h1{
+    font-size: 2.8vw;
+    font-weight: 100;
+    font-family: druk;
+}
+#p4-img3 #p4-text3 p{
+    width: 90%;
+    font-size: .9vw;
+    font-weight: 900;
+}
+
+
+
+#page5{
+    height: 110vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+#page5>h2{
+    font-family: Yank Regular;
+    font-size: 2.5vw;
+    font-weight: 100;
+    position: absolute;
+    top: .1%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+#page5>h1{
+    position: absolute;
+    top: 11%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    font-family: druk;
+    font-size: 8vw;
+    font-weight: 100;
+}
+#p5-box{
+    height: 45%;
+    width: 70%;
+    display: flex;
+    gap: 5px;
+}
+#page5 .bottle{
+    height: 100%;
+    position: relative;
+    width: 20%;
+    text-align: center;
+}
+.bottle img{
+    height: 280px;
+    transform: rotate(-15deg);
+}
+.bottle h3{
+    text-align: center;
+    width: 70%;
+    font-family: gilroy;
+    font-weight: 100;
+    font-size: 1vw;
+}
+.bottle:nth-child(3) h3{
+    position: absolute;
+    top: 85%;
+    margin-left: 15px;
+}
+
+
+#page6{
+    height: 60vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#p6-left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#p6-left img{
+    height: 90%;
+    width: 80%;
+    background-size: cover;
+}
+#p6-right{
+    height: 100%;
+    width: 40%;
+    padding: 20px 0px 0px 50px ;
+}
+#p6-right h3{
+    font-family: Yank Regular;
+    font-size: 1.9vw;
+    margin-bottom: 5px;
+    font-weight: 100;
+}
+#p6-right h1{
+    font-family: druk;
+    font-size: 4vw;
+    width: 30%;
+    line-height: 1;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+#p6-right h2{
+    font-family: druk;
+    font-size: 2vw;
+}
+#p6-right p{
+    font-family: gilroy;
+    font-size: 1vw;
+    width: 80%;
+    margin-bottom: 30px;
+    font-weight: 100;
+}
+#p6-right button{
+    font-family: gilroy;
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    padding: 5px 10px;
+    transition: all ease .7s;
+}
+#p6-right h4{
+    font-family: gilroy;
+    position: absolute;
+    right: 5%;
+    top: 90%;
+}
+
+#p6-right button:hover{
+    background-color: rgb(244,242,232);
+    color: black;
+}
+#nav button:hover{
+    color: rgb(41, 157, 43);
+    background-color: rgb(244,242,232);
+}
+#p2-left button:hover{
+    background-color: rgb(244,242,232);
+    color: black;
+}
+
+
+
+
+@media(max-width : 500px) {
+    #nav img {
+        height: 25px;
+        margin-top: 5px;
+    }
+    #nav{
+        height: 65px;
+    }
+
+    #nav button{
+        font-size: 10px;
+        padding: 9px 8px;
+    }
+    #left{
+        top: 0%;
+        padding: 10px 10px;
+    }
+    #nav-img {
+        left: 16%;
+        padding: 0% 0px 0px 0px;
+        width: 80%;
+    }
+    #nav-left #mid {
+        position: fixed;
+        left: 13%;
+        top: 1%;
+        margin-top: 14px;
+    }
+    #page1 h1 {
+        text-align: center;
+        font-size: 10vh;
+        width: 60%;
+        line-height: 9vh;
+        margin-top: -40px;
+    }
+    #page1{
+        height: 55vh;
+        width: 100%;
+        padding: 0px 0px 0px 20px;
+    }
+    #page2 {
+        height: 110vh;
+        padding: 5px 10px 0px 70px;
+        flex-direction: column;
+    }
+    #p2-left {
+        width: 100%;
+    }
+    #p2-right{
+        margin-top: 50px;
+        height: 50%;
+        width: 100%;
+        padding: 10px 10px 0px 15px;
+    }
+    #p2-left h2 {
+        font-family: "Yank Regular";
+        font-size: 18px;
+    }
+    #p2-left h1 {
+        width: 30%;
+        font-size: 6.5vh;
+        line-height: 6.4vh;
+    }
+    #p2-left h4 {
+        font-size: 3vh;
+    }
+    #p2-left p {
+        width: 90%;
+        font-size: 1.8vh;
+    }
+    #p2-left button{
+        margin-top: 35px;
+    }
+    #page3 h1 {
+        height: 20vh;
+        font-size: 80px;
+        letter-spacing: 4px;
+        display: flex;
+        align-items: center;
+    }
+    #page3 {
+        height: 110vh;
+        padding: 0px 10px 0px 60px;
+    }
+    #p3-bottom {
+        height: 50vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #p3-bleft img {
+        height: 170px;
+        margin-top: 30px;
+    }
+    #p3-bleft h3 {
+        font-size: 16px;
+        width: 86%;
+        line-height: 21px;
+        text-align: center;
+    }
+    #p3-bright {
+        height: 45vh;
+        margin-top: 40px;
+        margin-right: 0px;
+        width: 96%;
+    }
+    #p3-bright p {
+        width: 100%;
+        font-size: 3.5vw;
+    }
+    #p3-bright p:nth-child(1) {
+        margin-bottom: 15px;
+    }
+    #page4 #p4-img2 {
+        width: 198px;
+        height: 210px;
+        left: 9%;
+        top: 12%;
+    }
+    #p4-img2 #p4-text2 h1 {
+        font-size: 5.8vw;
+    }
+    #p4-img2 #p4-text2 p {
+        width: 90%;
+        font-size: 2.4vw;
+    }
+    #page4 #p4-img1 {
+        height: 310px;
+        width: 310px;
+        top: 43%;
+        left: 17%;
+    }
+    #p4-img1 #p4-text1 h1 {
+        font-size: 5.9vw;
+    }
+    #p4-img1 #p4-text1 p {
+        font-size: 2vw;
+        width: 90%;
+    }
+    #page4 #p4-img3 {
+        width: 230px;
+        height: 245px;
+        top: 77%;
+        left: 35%;
+    }
+    #p4-img3 #p4-text3 h1 {
+        font-size: 5.8vw;
+    }
+    #p4-img3 #p4-text3 p {
+        font-size: 2vw;
+    }
+    #page4 #p4-img4 {
+        height: 200px;
+        top: 65%;
+        left: 19%;
+    }
+    #page4 {
+        height: 110vh;
+    }
+    .bottle img {
+        height: 140px;
+        transform: rotate(-15deg);
+    }
+    #p5-box {
+        height: 45%;
+        width: 100%;
+        display: flex;
+        overflow-x: hidden;
+        gap:  0;
+    }
+    #page5 {
+        height: 60vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .bottle h3 {
+        font-size: 2.5vw;
+    }
+    .bottle:nth-child(3) h3 {
+        top: 78%;
+        margin-left: 7px;
+    }
+    #main-bottle{
+        position: fixed;
+        width: 150px;
+        max-height: 250px;
+        overflow-x: hidden;
+        display: none;
+    }
+    #main{
+        overflow-x: hidden;
+    }
+    #page6{
+        flex-direction: column;
+        height: 65vh;
+    }
+    #p6-left {
+        height: 55%;
+        width: 90%;
+        padding: 0px 0px 0px 20px;
+    }
+    #p6-right {
+        height: 100%;
+        width: 77%;
+        padding: 20px 0px 0px 30px;
+    }
+    #p6-right h3 {
+        font-size: 4vw;
+    }
+    #p6-right h1 {
+        font-size: 7vw;
+        width: 45%;
+    }
+    #p6-right h2 {
+        font-size: 4vw;
+    }
+    #p6-right p {
+        font-size: 2vw;
+        width: 87%;
+        margin-bottom: 20px;
+    }
+} 
